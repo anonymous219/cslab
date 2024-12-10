@@ -5,7 +5,9 @@ Choose Website Attack Vectors by giving “2”
 Choose Credential Harvester Attack Method by giving “3” 
 Choose Web Templates by giving “1” 
 Choose Google Website by giving “2”
-Open browser and enter IP Address(192.168.153.131)//google login page will come
+Open browser and enter IP Address
+  use the ip address you have in the following line in your system
+    <IP address for the POST back in Harvester/Tabnabbing [192.168.131.128]:>//google login page will open
 Enter your details 
 (The credentials is seen in your terminal)
 ------------------------------------------------
